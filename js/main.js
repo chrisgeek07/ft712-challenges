@@ -14,4 +14,4 @@ if (window.scrollY >= window.innerHeight / 4) {
 
 // ***email JS***
 
-const 
+const emailInput = document.querySelector("")
