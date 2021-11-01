@@ -33,4 +33,16 @@ form.addEventListener("submit", (event) => {
 // *** Dropdown menus ***
 
 const drop = document.querySelector(".dropdown")
+const dropEl = document.querySelector(".dropdown-content-left")
+const dropElRight = document.querySelector(".dropdown-content-right")
 const dropImg = document.querySelector(".dropdown-images")
+
+drop.addEventListener("mouseenter", (event) => {
+    console.log("Hey salut toi!");
+    dropEl.style.display = "block";
+})
+
+drop.addEventListener("mouseleave", (event) => {
+    console.log("Hey salut toi!");
+    dropEl.style.display = "none";
+})
