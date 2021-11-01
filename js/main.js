@@ -35,9 +35,10 @@ form.addEventListener("submit", (event) => {
 const drop = document.querySelector(".dropdown");
 const dropbtn = document.querySelector(".dropbtn");
 const dropEl = document.querySelector(".dropdown-content-left");
-const dropElRight = document.querySelector(".dropdown-content-right");
-const dropElRightLoc = document.querySelector(".dropdown-content-right");
+const dropElRight = document.querySelectorAll(".dropdown-content-right")[0];
+const dropElRightLoc = document.querySelectorAll(".dropdown-content-right")[1];
 const dropImg = document.querySelector(".dropdown-images");
+
 
 drop.addEventListener("mouseover", (event) => {
     console.log("Hey salut toi!");
@@ -49,6 +50,7 @@ drop.addEventListener("mouseover", (event) => {
 
 drop.addEventListener("mouseleave", (event) => {
     dropEl.style.display = "none";
+    dropEl.classList.remove("flex");
 })
 
 
