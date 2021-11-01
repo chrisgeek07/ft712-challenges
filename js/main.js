@@ -20,5 +20,11 @@ const form = document.querySelector(".form");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    acc.innerText = emailInput.value;
+    if (emailInput.value == "") {
+        alert("Your email cannot be blank!")
+    }
+    else {
+        acc.innerText = emailInput.value;
+    }
+    form.reset();
 })
