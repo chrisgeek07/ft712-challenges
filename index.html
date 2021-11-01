@@ -233,7 +233,7 @@
     <!--cards section-->
     <div class="container-card">
       <h2>Our Available Foodies</h2>
-    </div>
+    
     <div class="cards">
       <a
         class="card-category"
@@ -264,7 +264,7 @@
       </a>
 
       <a
-        class=""
+        class="card-category"
         style="
           background-image: linear-gradient(
               rgba(0, 0, 0, 0.3),
@@ -277,65 +277,72 @@
         Dinner
       </a>
     </div>
+  </div>
 
     <!--newsletter Section-->
-    <div class="newsletter-bloc">
-          <div class="email-bloc">
-              <div class="news-heading">
-                          <h2 class="module-title">
-                              Newsletter
-                          </h2>
-                          <p class="module-text">
-                              Receive our offers, news and events straight in your mailbox
-                          </p>
-                      </div>
+    
+    <div class="news-container">
+      <div class="newsletter-bloc">
+        <div class="news-email-column">
+            
+                <div class="news-heading">
+                            <h2 class="module-title">
+                                Newsletter
+                            </h2>
+                            <p class="module-text">
+                                Receive our offers, news and events straight in your mailbox
+                            </p>
+                        </div>
 
-                      <!-- Input Form & Button -->
-                      <form class="form">
-                          <div>
-                              <div class="input-container">
-                                  <label class="email-input">
-                                      <input name="email"
-                                          autocomplete="off"
-                                          type="email"
-                                          class="input-element"
-                                          placeholder="Your Email" />
-                                  </label>
-                              </div>
-                          </div>
-                          <div class="form-submit">
-                              <div class="btn-wrapper">
-                                  <button class="submit-button"><span>Valider</span></button>
-                              </div>
-                          </div>
-                      </form>
+                        <!-- Input Form & Button -->
+                        <form class="form">
+                            <div class="email-bloc">
+                                <div class="input-container">
+                                    <label class="email-input">
+                                        <input name="email"
+                                            autocomplete="off"
+                                            type="email"
+                                            class="input-element"
+                                            placeholder="Your Email" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-submit">
+                                <div class="btn-wrapper">
+                                    <button class="submit-button"><span>Valider</span></button>
+                                </div>
+                            </div>
+                        </form>
 
-                      <!-- newsletter footer -->
-                      <div class="news_footer">
-                          <a href="https://www.facebook.com/"
-                              target="_blank"
-                          >
-                              <span>Facebook</span></a
-                          >
-                          <a href="https://www.instagram.com/"
-                              target="_blank"
-                          >
-                              <span>Instagram</span></a
-                          >
-                          <a href="https://fr.pinterest.com/"
-                              target="_blank"
-                          >
-                              <span>Pinterest</span></a
-                          >
-                          <a href="https://twitter.com/"
-                              target="_blank"
-                          >
-                              <span>Twitter</span></a
-                          >
-                      </div>
+                        <!-- newsletter footer -->
+                        <div class="news_footer">
+                            <a href="https://www.facebook.com/"
+                                target="_blank"
+                            >
+                                <span>Facebook</span></a
+                            >
+                            <a href="https://www.instagram.com/"
+                                target="_blank"
+                            >
+                                <span>Instagram</span></a
+                            >
+                            <a href="https://fr.pinterest.com/"
+                                target="_blank"
+                            >
+                                <span>Pinterest</span></a
+                            >
+                            <a href="https://twitter.com/"
+                                target="_blank"
+                            >
+                                <span>Twitter</span></a
+                            >
+                        </div>
             </div>
-        <img src="https://images.unsplash.com/photo-1592727995117-4cdc7ee6fcb4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80">
-    </div>
+              <img  class="news-module-bg" src="https://images.unsplash.com/photo-1592727995117-4cdc7ee6fcb4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80">
+          </div>
+        </div>
+
+
 
 
     <!--Pre Footer Wrapper-->
@@ -350,7 +357,8 @@
                 </div>
             </div>
             <div class="pf-child">
-                <div id="pointer-child"></div>
+                <div id="pointer-child">
+                </div>
                 <div class="inside">
                     <i class="fa fa-truck" aria-hidden="true"></i>
                     <h3>Fast Delivery</h3>
@@ -386,19 +394,6 @@
         <p> © copyright Fabrice Madré | Le Wagon (Web development Bootcamp) | Les Kokottes, Moka, Mauritius </p>
     </div>
     <!-- JQuery & Javascript Scripts-->
-    <script>
-      // ***navbar JS***
-        const navbar = document.querySelector(".navbar");
-        const navWrapper = document.querySelector(".nav-wrapper")
-        window.addEventListener("scroll", () => {
-        if (window.scrollY >= window.innerHeight / 4) {
-            navbar.classList.add("navbar-white");
-            navWrapper.classList.add("top");
-        } else {
-            navbar.classList.remove("navbar-white");
-            navWrapper.classList.remove("top");
-        }
-        });
-    </script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

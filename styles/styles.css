@@ -1,7 +1,22 @@
-@import "components/prefooter.css";
+/* Google fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap');
+
+
+
+/* CSS components  */
+
+@import url("components/prefooter.css");
+@import "components/navbar.css";
+@import "components/content.css";
+@import "components/banner.css";
+@import "components/button.css";
+@import "components/dropdown.css";
+@import "components/cards.css";
 
 body {
   margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -12,186 +27,8 @@ a {
   transition: 0.4s ease-in-out;
 }
 
-li > a:hover {
-  border-bottom: solid 1px #303030;
-}
 
-.team-text-section {
-  width: 50%;
-}
 
-.nav-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 0px;
-  transition: 0.8s all;
-}
-
-.top {
-  top: 25px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: center;
-  background-color: #e2e2e2cb;
-  margin: 0;
-  width: 100vw;
-  z-index: 999;
-  transition: 0.8s all;
- }
-
-.navbar-white {
-  border-radius: 100px;
-  background-color: white;
-  height: 100px;
-  width: 80vw;
-}
-
-.navbar-logo {
-  width: 250px;
-  height: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.navbar ul {
-  padding: 0;
-}
-
-.navbar ul > li {
-  display: inline-block;
-  list-style-type: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0;
-}
-
-.hero-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('/images/hero.jpg');
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-}
-
-.hero-text-box {
-  width: 100%;
-  height: 100%;
-  background-color: #30303040;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-banner h1 {
-  font-weight: 700;
-  color: white;
-}
-
-.btn {
-  padding: 15px 35px 15px 35px;
-  font-size: large;
-  border-radius: 4px;
-  border: 1px solid #303030;
-}
-
-.btn-cta {
-  color: rgb(255, 255, 255);
-  background-color: #30303040 ;
-}
-
-.btn-cta:hover {
-  background-color: #303030e3 ;
-}
-
-.dropbtn {
-  color: rgb(91, 148, 148);
-  padding: 16px 16px 0 16px;
-  margin-bottom: 16px;
-  font-size: large;
-  border: none;
-  transition: 2s ease-in-out;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-images > a > img {
-  width: 300px;
-  border-radius: 4px;
-}
-.dropdown-content-right {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  padding: 25px;
-  min-width: 40vw;
-  right: 10%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content-left {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px;
-  min-width: 40vw;
-  left: 10%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content-right a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content-left a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.cards {
-}
-
-svg {
-  width: 50vw;
-}
-
-.card-category {
-  margin: 60px 15px 60px 15px;
-  width: 28%;
-  height: 35vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
 
 .module-container {
   display: flex;
@@ -201,10 +38,22 @@ svg {
   z-index: -3;
 }
 
+.newsletter-bloc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .news-email-column {
-  padding: 3rem;
+  padding: 5.6rem 3rem;
   background-color: #303030e3;
   height: 50%;
+  width: 35%;
+}
+
+.email-bloc {
+  width: 100%;
 }
 
 .news-heading {
@@ -227,8 +76,8 @@ svg {
 }
 
 .input-element {
-  width: 25rem;
-  padding: 1.2rem;
+  width: 80%;
+  padding: 1.1rem;
   border-radius: 15px 0 0 15px;
   background-color: #ddd;
   font-size: large;
@@ -255,9 +104,16 @@ svg {
   background-color: #303030;
 }
 
+.news-container {
+  width: 80%;
+  margin: 3rem auto;
+}
+
 .news-module-bg {
-  width: 760px;
-  height: 320px;
+  width: 65%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .news_footer {
@@ -268,6 +124,10 @@ svg {
 }
 
 .pf-wrapper {
+  display: flex;
+  width: 90%;
+  justify-content: flex-start;
+  margin-bottom: 5rem;
 }
 
 .footer {
@@ -280,10 +140,4 @@ svg {
   margin-top: 20px;
 }
 
-.dropdown-content-right a:hover {background-color: #ddd;}
-.dropdown-content-left a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content-right {}
-.dropdown:hover .dropdown-content-left {}
-
-.dropdown:hover .dropbtn {border-bottom: solid 1px #303030;}
