@@ -11,10 +11,6 @@
     position: relative;
     display: inline-block;
   }
-
-  .flex {
-    display: flex;
-  }
   
   .dropdown-images > a > img {
     width: 300px;
@@ -63,7 +59,6 @@
 .dropdown-content-right a:hover {background-color: #ddd;}
 
 .dropdown-content-left a:hover {background-color: #ddd;}
-
 
 
 .dropdown:hover .dropbtn {
