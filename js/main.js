@@ -1,4 +1,4 @@
-// ***navbar JS***
+// ***--------------- Navbar JS ---------------***
 const navbar = document.querySelector(".navbar");
 const navWrapper = document.querySelector(".nav-wrapper")
 window.addEventListener("scroll", () => {
@@ -12,7 +12,7 @@ if (window.scrollY >= window.innerHeight / 4) {
 });
 
 
-// ***Email JS***
+// ***--------------- Email JS ---------------***
 
 const emailInput = document.querySelector(".input-element");
 const acc = document.getElementById("account");
@@ -30,7 +30,7 @@ form.addEventListener("submit", (event) => {
 })
 
 
-// *** Dropdown Collections  ***
+// ***--------------- Dropdown Element Variables  ---------------***
 
 const drop = document.querySelector(".dropdown");
 const dropbtn = document.querySelector(".dropbtn");
@@ -40,21 +40,23 @@ const dropElRightLoc = document.querySelectorAll(".dropdown-content-right")[1];
 const dropImg = document.querySelector(".dropdown-images");
 
 
+// ***--------------- Dropdown Collections  ---------------***
+
+
 drop.addEventListener("mouseover", (event) => {
-    console.log("Hey salut toi!");
-    dropEl.style.display = "block";
-    dropEl.classList.add("flex");
+    // console.log("Hey salut toi!");
+    dropEl.style.display = "flex";
     dropImg.style.display = "block";
-    
 })
 
 drop.addEventListener("mouseleave", (event) => {
     dropEl.style.display = "none";
-    dropEl.classList.remove("flex");
 })
 
 
-// *** Dropdown Contact us  *** 
+// ***--------------- Dropdown Contact us  ---------------*** 
+
+
 const serv = document.getElementById("services");
 
 serv.addEventListener("mouseover", (event) => {
@@ -67,7 +69,9 @@ serv.addEventListener("mouseleave", (event) => {
 })
 
 
-// *** Dropdown Our shops  *** 
+// ***--------------- Dropdown Our shops  ---------------*** 
+
+
 const loc = document.getElementById("location");
 
 loc.addEventListener("mouseover", (event) => {
@@ -77,3 +81,6 @@ loc.addEventListener("mouseover", (event) => {
 loc.addEventListener("mouseleave", (event) => {
     dropElRightLoc.style.display = "none";
 })
+
+
+// ***--------------- This is the end  ---------------*** 

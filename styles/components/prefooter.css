@@ -1,3 +1,10 @@
+.pf-wrapper {
+  display: flex;
+  width: 90%;
+  justify-content: flex-start;
+  margin-bottom: 5rem;
+}
+
 .pf-index {
   position: relative;
   left: 10px;

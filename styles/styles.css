@@ -1,10 +1,8 @@
-/* Google fonts  */
+/* ---------- Google fonts ---------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap');
 
-
-
-/* CSS components  */
+/* ---------- CSS components ---------- */
 
 @import url("components/prefooter.css");
 @import "components/navbar.css";
@@ -13,6 +11,10 @@
 @import "components/button.css";
 @import "components/dropdown.css";
 @import "components/cards.css";
+@import "components/newsletter.css";
+@import "components/footer.css";
+
+/* ---------- Generic Styles ---------- */
 
 body {
   margin: 0;
@@ -28,116 +30,4 @@ a {
 }
 
 
-
-
-.module-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #30303040;
-  z-index: -3;
-}
-
-.newsletter-bloc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.news-email-column {
-  padding: 5.6rem 3rem;
-  background-color: #303030e3;
-  height: 50%;
-  width: 35%;
-}
-
-.email-bloc {
-  width: 100%;
-}
-
-.news-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.module-title {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-.input-element {
-  width: 80%;
-  padding: 1.1rem;
-  border-radius: 15px 0 0 15px;
-  background-color: #ddd;
-  font-size: large;
-  color: #303030e3;
-}
-
-.submit-button {
-  font-size: large;
-  font-weight: 600;
-  background-color: #ddd;
-  position: relative;
-  padding: 19px 35px;
-  border-radius: 0 15px 15px 0;
-  z-index: 1;
-}
-
-.module-text {
-  font-size: large;
-  color: cadetblue;
-}
-
-.submit-button:hover {
-  color: white;
-  background-color: #303030;
-}
-
-.news-container {
-  width: 80%;
-  margin: 3rem auto;
-}
-
-.news-module-bg {
-  width: 65%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.news_footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.pf-wrapper {
-  display: flex;
-  width: 90%;
-  justify-content: flex-start;
-  margin-bottom: 5rem;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  border-top: 1px solid #a5a5a5;
-  padding: 8px 0 19px;
-  margin-top: 20px;
-}
-
-
+/* ---------- The End ---------- */
