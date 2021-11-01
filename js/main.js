@@ -33,11 +33,13 @@ form.addEventListener("submit", (event) => {
 // *** Dropdown Collections  ***
 
 const drop = document.querySelector(".dropdown");
+const dropbtn = document.querySelector(".dropbtn");
 const dropEl = document.querySelector(".dropdown-content-left");
 const dropElRight = document.querySelector(".dropdown-content-right");
+const dropElRightLoc = document.querySelector(".dropdown-content-right");
 const dropImg = document.querySelector(".dropdown-images");
 
-drop.addEventListener("mouseenter", (event) => {
+drop.addEventListener("mouseover", (event) => {
     console.log("Hey salut toi!");
     dropEl.style.display = "block";
     dropEl.classList.add("flex");
@@ -53,10 +55,23 @@ drop.addEventListener("mouseleave", (event) => {
 // *** Dropdown Contact us  *** 
 const serv = document.getElementById("services");
 
-serv.addEventListener("mouseenter", (event) => {
+serv.addEventListener("mouseover", (event) => {
     dropElRight.style.display = "block";
+    
 })
 
 serv.addEventListener("mouseleave", (event) => {
     dropElRight.style.display = "none";
+})
+
+
+// *** Dropdown Our shops  *** 
+const loc = document.getElementById("location");
+
+loc.addEventListener("mouseover", (event) => {
+    dropElRightLoc.style.display = "block";
+})
+
+loc.addEventListener("mouseleave", (event) => {
+    dropElRightLoc.style.display = "none";
 })

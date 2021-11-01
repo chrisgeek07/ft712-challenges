@@ -62,9 +62,6 @@
 
 .dropdown-content-left a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content-right {}
-
-.dropdown:hover .dropdown-content-left {}
 
 
 .dropdown:hover .dropbtn {border-bottom: solid 1px #303030;}
