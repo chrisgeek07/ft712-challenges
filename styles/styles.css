@@ -33,5 +33,33 @@ h2 {
   font-size: 32px;
 }
 
+.highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  background-color: #ff3b30;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  width: 17%;
+  transition: 300ms all ease-in-out;
+}
+
+.highlight:hover::after {
+  width: 100%;
+}
+
+.highlight-red {
+  display: inline-block;
+  color: #ff3b30;
+  border-radius: 3px;
+  padding: 2px 15px 4px;
+}
+
 
 /* ---------- The End ---------- */
