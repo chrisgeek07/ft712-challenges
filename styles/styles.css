@@ -23,10 +23,14 @@ body {
 
 a {
   font-size: large;
-  color: rgb(91, 148, 148);
+  color: rgb(0, 0, 0, .5);
   text-decoration: none;
   padding: 16px 16px 0 16px;
   transition: 0.4s ease-in-out;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 
