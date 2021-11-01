@@ -28,3 +28,9 @@ form.addEventListener("submit", (event) => {
     }
     form.reset();
 })
+
+
+// *** Dropdown menus ***
+
+const drop = document.querySelector(".dropdown")
+const dropImg = document.querySelector(".dropdown-images")
