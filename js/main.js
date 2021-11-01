@@ -12,6 +12,13 @@ if (window.scrollY >= window.innerHeight / 4) {
 });
 
 
-// ***email JS***
+// ***Email JS***
 
-const emailInput = document.querySelector("")
+const emailInput = document.querySelector(".input-element");
+const acc = document.getElementById("account");
+const form = document.querySelector(".form");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    acc.innerText = emailInput.value;
+})
