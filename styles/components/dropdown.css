@@ -11,6 +11,10 @@
     position: relative;
     display: inline-block;
   }
+
+  .flex {
+    display: flex;
+  }
   
   .dropdown-images > a > img {
     width: 300px;

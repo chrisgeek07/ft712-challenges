@@ -30,19 +30,33 @@ form.addEventListener("submit", (event) => {
 })
 
 
-// *** Dropdown menus ***
+// *** Dropdown Collections  ***
 
-const drop = document.querySelector(".dropdown")
-const dropEl = document.querySelector(".dropdown-content-left")
-const dropElRight = document.querySelector(".dropdown-content-right")
-const dropImg = document.querySelector(".dropdown-images")
+const drop = document.querySelector(".dropdown");
+const dropEl = document.querySelector(".dropdown-content-left");
+const dropElRight = document.querySelector(".dropdown-content-right");
+const dropImg = document.querySelector(".dropdown-images");
 
 drop.addEventListener("mouseenter", (event) => {
     console.log("Hey salut toi!");
     dropEl.style.display = "block";
+    dropEl.classList.add("flex");
+    dropImg.style.display = "block";
+    
 })
 
 drop.addEventListener("mouseleave", (event) => {
-    console.log("Hey salut toi!");
     dropEl.style.display = "none";
+})
+
+
+// *** Dropdown Contact us  *** 
+const serv = document.getElementById("services");
+
+serv.addEventListener("mouseenter", (event) => {
+    dropElRight.style.display = "block";
+})
+
+serv.addEventListener("mouseleave", (event) => {
+    dropElRight.style.display = "none";
 })
