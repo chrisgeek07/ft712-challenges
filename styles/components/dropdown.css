@@ -60,6 +60,9 @@
 
 .dropdown-content-left a:hover {background-color: #ddd;}
 
+.dropdown:hover .dropdown-content-right { display: block;}
+.dropdown:hover .dropdown-content-left { display: flex; }
+
 
 .dropdown:hover .dropbtn {
   border-bottom: solid 2px #303030;

@@ -32,55 +32,55 @@ form.addEventListener("submit", (event) => {
 
 // ***--------------- Dropdown Element Variables  ---------------***
 
-const drop = document.querySelector(".dropdown");
-const dropbtn = document.querySelector(".dropbtn");
-const dropEl = document.querySelector(".dropdown-content-left");
-const dropElRight = document.querySelectorAll(".dropdown-content-right")[0];
-const dropElRightLoc = document.querySelectorAll(".dropdown-content-right")[1];
-const dropImg = document.querySelector(".dropdown-images");
+// const drop = document.querySelector(".dropdown");
+// const dropbtn = document.querySelector(".dropbtn");
+// const dropEl = document.querySelector(".dropdown-content-left");
+// const dropElRight = document.querySelectorAll(".dropdown-content-right")[0];
+// const dropElRightLoc = document.querySelectorAll(".dropdown-content-right")[1];
+// const dropImg = document.querySelector(".dropdown-images");
 
 
 // ***--------------- Dropdown Collections  ---------------***
 
 
-drop.addEventListener("mouseover", (event) => {
-    // console.log("Hey salut toi!");
-    dropEl.style.display = "flex";
-    dropImg.style.display = "block";
-})
+// drop.addEventListener("mouseover", (event) => {
+//     // console.log("Hey salut toi!");
+//     dropEl.style.display = "flex";
+//     dropImg.style.display = "block";
+// })
 
-drop.addEventListener("mouseleave", (event) => {
-    dropEl.style.display = "none";
-})
+// drop.addEventListener("mouseleave", (event) => {
+//     dropEl.style.display = "none";
+// })
 
 
 // ***--------------- Dropdown Contact us  ---------------*** 
 
 
-const serv = document.getElementById("services");
+// const serv = document.getElementById("services");
 
-serv.addEventListener("mouseover", (event) => {
-    dropElRight.style.display = "block";
+// serv.addEventListener("mouseover", (event) => {
+//     dropElRight.style.display = "block";
     
-})
+// })
 
-serv.addEventListener("mouseleave", (event) => {
-    dropElRight.style.display = "none";
-})
+// serv.addEventListener("mouseleave", (event) => {
+//     dropElRight.style.display = "none";
+// })
 
 
 // ***--------------- Dropdown Our shops  ---------------*** 
 
 
-const loc = document.getElementById("location");
+// const loc = document.getElementById("location");
 
-loc.addEventListener("mouseover", (event) => {
-    dropElRightLoc.style.display = "block";
-})
+// loc.addEventListener("mouseover", (event) => {
+//     dropElRightLoc.style.display = "block";
+// })
 
-loc.addEventListener("mouseleave", (event) => {
-    dropElRightLoc.style.display = "none";
-})
+// loc.addEventListener("mouseleave", (event) => {
+//     dropElRightLoc.style.display = "none";
+// })
 
 
 // ***--------------- This is the end  ---------------*** 
